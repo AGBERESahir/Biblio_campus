@@ -8,7 +8,7 @@ def afficher_menu():
 
     while True:
         print("\n========== BiblioCampus ==========")
-        print("1. Ajouter un livre")
+        print("1. [LIVRES] Ajouter un livre")
         print("2. Lister les livres")
         print("3. Rechercher un livre")
         print("4. Emprunter un livre")
