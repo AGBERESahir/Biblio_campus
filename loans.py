@@ -16,7 +16,7 @@ def rendre_livre(donnees, titre):
             if not livre["disponible"]:
                 livre["disponible"] = True
                 for emprunt in donnees["emprunts"]:
-                    if emprunt["titre"].lower() == titre.lower():
+                    if emprunt["titres"].lower() == titre.lower():
                         emprunt["statut"] = "rendu"
                 return f"✅ Livre '{titre}' rendu avec succès."
             else:
