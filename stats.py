@@ -1,0 +1,1 @@
+def afficher_stats(donnees): print("Statistiques à venir")
