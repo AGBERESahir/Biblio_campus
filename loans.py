@@ -3,7 +3,7 @@ def emprunter_livre(donnees, titre):
         if livre["titre"].lower() == titre.lower():
             if livre["disponible"]:
                 livre["disponible"] = False
-                donnees["emprunts"].append({"titre": titre, "statut": "emprunté"})
+                donnees["emprunts"].append({"titre": titre, "statut": "emprunte"})
                 return f"✅ Livre '{titre}' emprunté avec succès."
             else:
                 return f"❌ Le livre '{titre}' est déjà emprunté."
